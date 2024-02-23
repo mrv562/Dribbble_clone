@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+body{
+ background-color: rgb(248, 248, 242);
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.abt ul{
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.abt ul a{
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 50px;
+}
+
+.search_bar{
+  display: flex;
+  align-items: center;
+}
+
+.profile img{
+  top: 38px;
+  right: 240px;
+}
+
+.profile img{
+  background: #fff;
+  width: 50px;
+  padding: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.profile input{
+  width: 250px;
+  padding: 17px 0px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+.login .login_btn{
+  background-color: rgb(248, 248, 242);
+  color: black;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.login .signup_btn{
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.discription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 25px;
+}
+
+.discription span{
+  font-size: 18px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  animation: bgcolor infinite 20s;
+}
+
+@keyframes bgcolor{
+  0% {
+    background-color: pink;
+  }
+  20% {
+    background-color: violet;
+  }
+  40% {
+    background-color: purple;
+  }
+  60% {
+    background-color: rgb(140, 140, 242);
+  }
+  80% {
+    background-color: lightblue;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
+.discription h1 pre{
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.discription p{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.discription button{
+  font-size: 17px;
+  color: white;
+  background-color: black;
+  padding: 17px 20px;
+  border-radius: 50px;
+}
+
+.images{
+  overflow: hidden;
+  padding: 80px 0;
+  white-space: nowrap;
+}
+
+.image_slider{
+  display: inline-block;
+  animation: image_slide infinite 40s linear;
+}
+
+@keyframes image_slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+  
+}
+
+.image_slider img{
+  height: 350px;
+  border-radius: 40px;
+  margin: 0 13px;
+}
+
+.eid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.eid h1{
+  font-size: 53px;
+}
+
+.img{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px;
+}
+
+.img img{
+  width: 100%;
+  padding: 18px;
+  border-radius: 20px;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.btn button{
+  font-size: 17px;
+  padding: 17px 23px;
+  border-radius: 50px;
+  outline: 0.5px;
+  background-color: #fff;
+}
+
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: #ffda79;
+  padding-bottom: 130px;
+}
+
+.contact .head{
+  margin-top: 100px;
+  
+}
+
+.contact .head h1{
+  font-size: 60px;
+}
+
+.mid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid p{
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons .get_started_now{
+  font-size: 17px;
+  color: white;
+  background-color: black;
+  padding: 17px 20px;
+  border-radius: 50px;
+  border: 0;
+}
+
+.buttons .lah{
+  font-size: 17px;
+  color: black;
+  background-color: white;
+  padding: 17px 20px;
+  border-radius: 50px;
+  border: 0;
+}
+
+.contact p{
+  font-size: 23px;
+}
+
+.contact span{
+  text-decoration: underline;
+}
+
+.footer{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons img{
+  width: 25px;
+}
